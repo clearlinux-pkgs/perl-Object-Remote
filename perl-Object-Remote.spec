@@ -4,7 +4,7 @@
 #
 Name     : perl-Object-Remote
 Version  : 0.004001
-Release  : 2
+Release  : 3
 URL      : https://cpan.metacpan.org/authors/id/H/HA/HAARG/Object-Remote-0.004001.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/H/HA/HAARG/Object-Remote-0.004001.tar.gz
 Summary  : 'Call methods on objects in other processes or on other hosts'
@@ -139,37 +139,37 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.2/Object/Remote.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Object/Remote/CodeContainer.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Object/Remote/Connection.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Object/Remote/ConnectionServer.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Object/Remote/Connector/INET.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Object/Remote/Connector/Local.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Object/Remote/Connector/LocalSudo.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Object/Remote/Connector/SSH.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Object/Remote/Connector/STDIO.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Object/Remote/Connector/UNIX.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Object/Remote/FatNode.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Object/Remote/FromData.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Object/Remote/Future.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Object/Remote/GlobContainer.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Object/Remote/GlobProxy.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Object/Remote/Handle.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Object/Remote/Logging.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Object/Remote/Logging/LogAnyInjector.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Object/Remote/Logging/Logger.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Object/Remote/Logging/Router.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Object/Remote/Logging/TestLogger.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Object/Remote/MiniLoop.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Object/Remote/ModuleLoader.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Object/Remote/ModuleSender.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Object/Remote/Node.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Object/Remote/Null.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Object/Remote/Prompt.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Object/Remote/Proxy.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Object/Remote/ReadChannel.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Object/Remote/Role/Connector.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Object/Remote/Role/Connector/PerlInterpreter.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Object/Remote/Role/LogForwarder.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Object/Remote/Tied.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Object/Remote/WatchDog.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Object/Remote.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Object/Remote/CodeContainer.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Object/Remote/Connection.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Object/Remote/ConnectionServer.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Object/Remote/Connector/INET.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Object/Remote/Connector/Local.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Object/Remote/Connector/LocalSudo.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Object/Remote/Connector/SSH.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Object/Remote/Connector/STDIO.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Object/Remote/Connector/UNIX.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Object/Remote/FatNode.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Object/Remote/FromData.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Object/Remote/Future.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Object/Remote/GlobContainer.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Object/Remote/GlobProxy.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Object/Remote/Handle.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Object/Remote/Logging.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Object/Remote/Logging/LogAnyInjector.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Object/Remote/Logging/Logger.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Object/Remote/Logging/Router.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Object/Remote/Logging/TestLogger.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Object/Remote/MiniLoop.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Object/Remote/ModuleLoader.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Object/Remote/ModuleSender.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Object/Remote/Node.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Object/Remote/Null.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Object/Remote/Prompt.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Object/Remote/Proxy.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Object/Remote/ReadChannel.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Object/Remote/Role/Connector.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Object/Remote/Role/Connector/PerlInterpreter.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Object/Remote/Role/LogForwarder.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Object/Remote/Tied.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Object/Remote/WatchDog.pm
