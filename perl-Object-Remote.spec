@@ -4,7 +4,7 @@
 #
 Name     : perl-Object-Remote
 Version  : 0.004001
-Release  : 4
+Release  : 5
 URL      : https://cpan.metacpan.org/authors/id/H/HA/HAARG/Object-Remote-0.004001.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/H/HA/HAARG/Object-Remote-0.004001.tar.gz
 Summary  : 'Call methods on objects in other processes or on other hosts'
