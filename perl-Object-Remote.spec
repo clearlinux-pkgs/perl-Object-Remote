@@ -6,14 +6,15 @@
 # autospec commit: 5905be9
 #
 Name     : perl-Object-Remote
-Version  : 0.004003
-Release  : 15
-URL      : https://cpan.metacpan.org/authors/id/H/HA/HAARG/Object-Remote-0.004003.tar.gz
-Source0  : https://cpan.metacpan.org/authors/id/H/HA/HAARG/Object-Remote-0.004003.tar.gz
+Version  : 0.004004
+Release  : 16
+URL      : https://cpan.metacpan.org/authors/id/H/HA/HAARG/Object-Remote-0.004004.tar.gz
+Source0  : https://cpan.metacpan.org/authors/id/H/HA/HAARG/Object-Remote-0.004004.tar.gz
 Summary  : 'Call methods on objects in other processes or on other hosts'
 Group    : Development/Tools
-License  : Artistic-1.0-Perl
+License  : Artistic-1.0-Perl GPL-1.0
 Requires: perl-Object-Remote-bin = %{version}-%{release}
+Requires: perl-Object-Remote-license = %{version}-%{release}
 Requires: perl-Object-Remote-perl = %{version}-%{release}
 BuildRequires : buildreq-cpan
 BuildRequires : perl(Algorithm::C3)
@@ -45,6 +46,7 @@ hosts
 %package bin
 Summary: bin components for the perl-Object-Remote package.
 Group: Binaries
+Requires: perl-Object-Remote-license = %{version}-%{release}
 
 %description bin
 bin components for the perl-Object-Remote package.
@@ -61,6 +63,14 @@ Requires: perl-Object-Remote = %{version}-%{release}
 dev components for the perl-Object-Remote package.
 
 
+%package license
+Summary: license components for the perl-Object-Remote package.
+Group: Default
+
+%description license
+license components for the perl-Object-Remote package.
+
+
 %package perl
 Summary: perl components for the perl-Object-Remote package.
 Group: Default
@@ -71,10 +81,10 @@ perl components for the perl-Object-Remote package.
 
 
 %prep
-%setup -q -n Object-Remote-0.004003
-cd %{_builddir}/Object-Remote-0.004003
+%setup -q -n Object-Remote-0.004004
+cd %{_builddir}/Object-Remote-0.004004
 pushd ..
-cp -a Object-Remote-0.004003 buildavx2
+cp -a Object-Remote-0.004004 buildavx2
 popd
 
 %build
@@ -99,6 +109,8 @@ make TEST_VERBOSE=1 test
 
 %install
 rm -rf %{buildroot}
+mkdir -p %{buildroot}/usr/share/package-licenses/perl-Object-Remote
+cp %{_builddir}/Object-Remote-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/perl-Object-Remote/8e66294e05cb01b0a01f8ae91d3aad268d8906b2 || :
 if test -f Makefile.PL; then
 make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
 else
@@ -127,6 +139,10 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 /usr/share/man/man3/Object::Remote::Logging.3
 /usr/share/man/man3/Object::Remote::Logging::Logger.3
 /usr/share/man/man3/Object::Remote::Role::Connector::PerlInterpreter.3
+
+%files license
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/perl-Object-Remote/8e66294e05cb01b0a01f8ae91d3aad268d8906b2
 
 %files perl
 %defattr(-,root,root,-)
